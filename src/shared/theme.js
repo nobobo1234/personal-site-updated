@@ -1,5 +1,12 @@
 const color = (rgb) => `rgba(${rgb}, 1)`;
 
+export const viewPorts = {
+    smallestViewport: '37.25em',
+    smallViewport: '43.75em',
+    mediumViewport: '56.25em',
+    largestViewport: '68.75em',
+};
+
 export const light = {
     primaryColor: color('40, 165, 174'),
     secondaryColor: color('113, 183, 190'),
@@ -10,6 +17,7 @@ export const light = {
 
     displayFont: "'Source Sans Pro', sans-serif",
     headerFont: "'Open Sans', sans-serif",
+    ...viewPorts,
 };
 
 export const dark = {
@@ -22,4 +30,5 @@ export const dark = {
 
     displayFont: "'Source Sans Pro', sans-serif",
     headerFont: "'Open Sans', sans-serif",
+    ...viewPorts,
 };

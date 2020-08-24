@@ -7,7 +7,9 @@ import { ButtonLink } from '../../Button';
 const NavItem = ({ to, text, button = false }) => (
     <Container>
         {button ? (
-            <ButtonLink isCta to={to} text={text} />
+            <ButtonLink isCta to={to}>
+                {text}
+            </ButtonLink>
         ) : (
             <Link to={to}>{text}</Link>
         )}

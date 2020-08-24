@@ -21,3 +21,9 @@ export const Subtitle = styled.h3`
         color === 'light' ? theme.textWhiteAccent : theme.textColor};
     font-weight: ${({ weight }) => (weight === 'thin' ? 300 : 400)};
 `;
+
+export const CardTitle = styled.h4`
+    font-size: 2.2rem;
+    font-family: ${({ theme }) => theme.headerFont};
+    font-weight: 700;
+`

@@ -12,6 +12,7 @@ const Button = styled.button`
     border-radius: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     justify-self: start;
     cursor: pointer;
     border: none;
@@ -28,15 +29,18 @@ const Button = styled.button`
     }
 `;
 
-const ButtonLink = ({ to, text, isCta = false }) => (
+const ButtonLink = ({ to, children, isCta = false }) => (
     <Button as={Link} duration={700} smooth to={to} iscta={isCta.toString()}>
-        {text}
+        {children}
     </Button>
 );
 
 ButtonLink.propTypes = {
     to: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+    ]).isRequired,
     isCta: PropTypes.bool,
 };
 

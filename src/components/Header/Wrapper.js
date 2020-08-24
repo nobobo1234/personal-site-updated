@@ -4,9 +4,9 @@ import { transparentize } from 'polished';
 import headerImage from '../../assets/header.jpg';
 
 export default styled.header`
-    grid-column: full-start / full-end;
     padding: 4rem;
     display: flex;
+    height: 92vh;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;

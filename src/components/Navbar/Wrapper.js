@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export default styled.nav`
-    grid-column: full-start / full-end;
+    min-height: 6rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
